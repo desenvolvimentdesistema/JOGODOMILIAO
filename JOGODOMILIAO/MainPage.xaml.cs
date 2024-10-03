@@ -42,4 +42,10 @@ public partial class MainPage : ContentPage
 		gerenciador.VerficaResposta (5);
 	}
 
+	void OnAjudaRetirarClicked(object s, EventArgs e)
+	{
+		var ajuda = new RetiraErrada();
+		ajuda = ConfiguraDesenha(ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+		
+	}
 }

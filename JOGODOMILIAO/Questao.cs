@@ -18,7 +18,7 @@ namespace JOGODOMILHAO
         private Button ButtonResposta4;
         private Button ButtonResposta5;
 
-        public void ConfiguraDesenhar(Label LabelPergunta, Button Button1, Button Button2,Button Button3,Button Button4,Button Button5)
+        public void ConfiguraDesenha(Label LabelPergunta, Button Button1, Button Button2,Button Button3,Button Button4,Button Button5)
         {
             LabelPergunta = LabelPergunta;
             ButtonResposta1 = ButtonResposta1;
@@ -27,7 +27,7 @@ namespace JOGODOMILHAO
             ButtonResposta4 = ButtonResposta4;
             ButtonResposta5 = ButtonResposta5;
         }
-        public void Desenhar()
+        public void Desenha()
         {
             LabelPergunta = LabelPergunta;
             ButtonResposta1 = ButtonResposta1;
@@ -35,6 +35,11 @@ namespace JOGODOMILHAO
             ButtonResposta3 = ButtonResposta3;
             ButtonResposta4 = ButtonResposta4;
             ButtonResposta5 = ButtonResposta5;
+            ButtonResposta1.IsVisible = true;
+            ButtonResposta2.IsVisible = true;
+            ButtonResposta3.IsVisible = true;
+            ButtonResposta4.IsVisible = true;
+            ButtonResposta5.IsVisible = true;
 
         }
         private Button QualButton(int VerificaResposta)
@@ -90,7 +95,8 @@ namespace JOGODOMILHAO
     {
         public bool Equals (Questao q)
         {
-            return this.Nivel == q.Nivel;
+            return this.Nivel == q.Nivel &&
+                   this.Pergunta == q.Pergunta;
         }
     }
 }
