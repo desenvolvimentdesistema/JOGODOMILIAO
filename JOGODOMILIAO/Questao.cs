@@ -1,8 +1,13 @@
 namespace JOGODOMILHAO
 {
 
-    public class Questao
+    public class Questao : IEquatable<Questao>
     {
+        public bool Equals (Questao q)
+        {
+            return this.Nivel == q.Nivel &&
+                   this.Pergunta == q.Pergunta;
+        }
         public string Pergunta;
         public string Resposta1;
         public string Resposta2;
@@ -91,12 +96,5 @@ namespace JOGODOMILHAO
     }
     }
 
-    public class Questao : IEquatable<Questao>
-    {
-        public bool Equals (Questao q)
-        {
-            return this.Nivel == q.Nivel &&
-                   this.Pergunta == q.Pergunta;
-        }
-    }
+    
 }

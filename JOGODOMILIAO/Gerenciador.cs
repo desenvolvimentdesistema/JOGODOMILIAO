@@ -836,6 +836,214 @@ namespace JOGODOMILHAO
         ConfiguraDesenha(LabelPergunta, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
         ListaQuestao.Add(Q75);
 
+        var Q76 = new Questao();
+        Q76.Pergunta = "Na psicologia cognitiva, o que propõe o modelo de processamento dual em relação à tomada de decisões humanas?";
+        Q76.Resposta1 = "Que a tomada de decisão ocorre de forma puramente racional";
+        Q76.Resposta2 = "Que há dois sistemas de pensamento: um rápido e automático, e outro lento e deliberado";
+        Q76.Resposta3 = "Que todas as decisões são baseadas em memórias inconscientes";
+        Q76.Resposta4 = "Que o processo decisório é sempre influenciado por emoções";
+        Q76.Resposta5 = "Que o ambiente externo não tem impacto significativo na tomada de decisão";
+        Q76.RespostaCorreta = 2;
+        ConfiguraDesenha(LabelPergunta, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+        ListaQuestao.Add(Q76);
+
+        var Q77 = new Questao();
+        Q77.Pergunta = "Na química orgânica, qual é a principal característica que define os compostos aromáticos, como o benzeno, de acordo com a regra de Hückel?";
+        Q77.Resposta1 = "Eles têm uma cadeia de átomos de carbono aberta e saturada";
+        Q77.Resposta2 = "Eles têm um número par de elétrons de ligação pi deslocalizados";
+        Q77.Resposta3 = "Eles obedecem à regra de 4n + 2 elétrons pi deslocalizados em anéis conjugados";
+        Q77.Resposta4 = "Eles são sempre alifáticos e possuem ligações duplas";
+        Q77.Resposta5 = "Eles têm uma estrutura geométrica linear e acíclica";
+        Q77.RespostaCorreta = 3;
+        ConfiguraDesenha(LabelPergunta, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+        ListaQuestao.Add(Q77);
+
+        var Q78 = new Questao();
+        Q78.Pergunta = "Na economia, o que propõe o teorema de Coase sobre a alocação eficiente de recursos em presença de externalidades?";
+        Q78.Resposta1 = "Que o governo deve intervir em todas as situações de externalidades negativas";
+        Q78.Resposta2 = "Que as externalidades sempre levam ao fracasso do mercado, independentemente de acordos entre as partes";
+        Q78.Resposta3 = "Que, na ausência de custos de transação, os agentes econômicos podem negociar para alocar recursos de forma eficiente";
+        Q78.Resposta4 = "Que externalidades positivas são corrigidas automaticamente pelos mercados";
+        Q78.Resposta5 = "Que as externalidades são irrelevantes para o equilíbrio de mercado";
+        Q78.RespostaCorreta = 3;
+        ConfiguraDesenha(LabelPergunta, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+        ListaQuestao.Add(Q78);
+
+        var Q79 = new Questao();
+        Q79.Pergunta = "Na filosofia política, o que sustenta a teoria da justiça de John Rawls, especialmente com relação ao 'véu da ignorância'?";
+        Q79.Resposta1 = "Que as desigualdades sociais são inevitáveis e devem ser aceitas";
+        Q79.Resposta2 = "Que os indivíduos devem escolher princípios de justiça sem conhecer sua posição na sociedade";
+        Q79.Resposta3 = "Que a justiça é uma questão de eficiência econômica";
+        Q79.Resposta4 = "Que o poder político deve ser distribuído de acordo com o mérito";
+        Q79.Resposta5 = "Que a justiça só pode ser alcançada por meio de uma economia de mercado sem restrições";
+        Q79.RespostaCorreta = 2;
+        ConfiguraDesenha(LabelPergunta, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+        ListaQuestao.Add(Q79);
+
+        var Q80 = new Questao();
+        Q80.Pergunta = "Na ecologia, o que define o conceito de nicho ecológico segundo a visão de G. Evelyn Hutchinson?";
+        Q80.Resposta1 = "É o conjunto de habitats onde uma espécie pode ser encontrada";
+        Q80.Resposta2 = "É a posição de uma espécie na cadeia alimentar";
+        Q80.Resposta3 = "É o conjunto de condições ambientais e recursos que uma espécie requer para sobreviver e se reproduzir";
+        Q80.Resposta4 = "É o papel de uma espécie na polinização e dispersão de sementes";
+        Q80.Resposta5 = "É o espaço físico que uma espécie ocupa em um ecossistema";
+        Q80.RespostaCorreta = 3;
+        ConfiguraDesenha(LabelPergunta, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+        ListaQuestao.Add(Q80);
+
+        var Q81 = new Questao();
+        Q81.Pergunta = "Na linguística, qual é o princípio fundamental da hipótese de Sapir-Whorf, também conhecida como a hipótese da relatividade linguística?";
+        Q81.Resposta1 = "Todas as línguas possuem estruturas gramaticais idênticas";
+        Q81.Resposta2 = "A linguagem influencia o pensamento e a percepção de mundo";
+        Q81.Resposta3 = "A linguagem é uma criação arbitrária sem conexão com a realidade";
+        Q81.Resposta4 = "A linguagem evolui de maneira independente das influências culturais";
+        Q81.Resposta5 = "A linguagem se desenvolve de acordo com regras matemáticas precisas";
+        Q81.RespostaCorreta = 2;
+        ConfiguraDesenha(LabelPergunta, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+        ListaQuestao.Add(Q81);
+
+        var Q82 = new Questao();
+        Q82.Pergunta = "Em economia, qual é o conceito fundamental que descreve a relação inversa entre o nível de preços e a quantidade demandada de bens e serviços, conhecido como a lei da demanda?";
+        Q82.Resposta1 = "Quanto maior o preço, maior a quantidade demandada";
+        Q82.Resposta2 = "A demanda é completamente insensível às variações de preço";
+        Q82.Resposta3 = "Quanto menor o preço, maior a quantidade demandada";
+        Q82.Resposta4 = "A quantidade demandada é diretamente proporcional ao preço";
+        Q82.Resposta5 = "A demanda por bens de luxo aumenta com o preço";
+        Q82.RespostaCorreta = 3;
+        ConfiguraDesenha(LabelPergunta, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+        ListaQuestao.Add(Q82);
+
+        var Q83 = new Questao();
+        Q83.Pergunta = "Na filosofia, qual é a principal questão tratada na obra 'Crítica da Razão Pura' de Immanuel Kant?";
+        Q83.Resposta1 = "A existência de Deus";
+        Q83.Resposta2 = "A relação entre experiência e conhecimento a priori";
+        Q83.Resposta3 = "A moralidade e o imperativo categórico";
+        Q83.Resposta4 = "A relação entre mente e corpo";
+        Q83.Resposta5 = "A natureza do ser e do tempo";
+        Q83.RespostaCorreta = 2;
+        ConfiguraDesenha(LabelPergunta, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+        ListaQuestao.Add(Q83);
+
+        var Q84 = new Questao();
+        Q84.Pergunta = "Na biologia molecular, o que é o splicing alternativo e qual é sua principal função nos organismos eucarióticos?";
+        Q84.Resposta1 = "Remover introns e exons de maneira sequencial";
+        Q84.Resposta2 = "Permitir a tradução direta de RNA em proteínas sem processamento";
+        Q84.Resposta3 = "Permitir que um único gene codifique múltiplas proteínas";
+        Q84.Resposta4 = "Acelerar o processo de replicação do DNA";
+        Q84.Resposta5 = "Controlar a velocidade de transcrição dos genes";
+        Q84.RespostaCorreta = 3;
+        ConfiguraDesenha(LabelPergunta, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+        ListaQuestao.Add(Q84);
+
+        var Q85 = new Questao();
+        Q85.Pergunta = "Na medicina, qual é a principal função das células de Schwann no sistema nervoso periférico?";
+        Q85.Resposta1 = "Atuam na produção de neurotransmissores";
+        Q85.Resposta2 = "Participam na manutenção da barreira hematoencefálica";
+        Q85.Resposta3 = "Facilitam a regeneração de sinapses neuronais";
+        Q85.Resposta4 = "Regulam a pressão sanguínea nas arteríolas cerebrais";
+        Q85.Resposta5 = "Promovem a mielinização dos axônios, aumentando a velocidade de condução dos impulsos nervosos";
+        Q85.RespostaCorreta = 5;
+        ConfiguraDesenha(LabelPergunta, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+        ListaQuestao.Add(Q85);
+
+        var Q86 = new Questao();
+        Q86.Pergunta = "Em engenharia civil, o que é o 'módulo de Young' e como ele é utilizado no cálculo estrutural?";
+        Q86.Resposta1 = "Uma medida da resistência ao impacto de um material";
+        Q86.Resposta2 = "A força necessária para causar uma falha catastrófica em uma estrutura";
+        Q86.Resposta3 = "Um coeficiente usado para calcular a carga crítica em vigas";
+        Q86.Resposta4 = "A relação entre a tensão aplicada e a deformação elástica resultante em um material";
+        Q86.Resposta5 = "Uma constante que descreve a resistência ao cisalhamento de um material";
+        Q86.RespostaCorreta = 4;
+        ConfiguraDesenha(LabelPergunta, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+        ListaQuestao.Add(Q86);
+
+        var Q87 = new Questao();
+        Q87.Pergunta = "Na sociologia, o que Max Weber propôs como a característica central da 'ética protestante' em relação ao desenvolvimento do capitalismo?";
+        Q87.Resposta1 = "A ênfase na salvação individual por meio da fé";
+        Q87.Resposta2 = "A crença de que a acumulação de riquezas é moralmente condenável";
+        Q87.Resposta3 = "A visão de que o capitalismo floresceu em culturas não religiosas";
+        Q87.Resposta4 = "O desenvolvimento de uma ética de trabalho e disciplina que favoreceu o surgimento do capitalismo moderno";
+        Q87.RespostaCorreta = 5;
+        ConfiguraDesenha(LabelPergunta, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+        ListaQuestao.Add(Q87);
+
+        var Q88 = new Questao();
+        Q88.Pergunta = "Na estatística, o que afirma o teorema do limite central sobre distribuições de amostras aleatórias?";
+        Q88.Resposta1 = "Que qualquer amostra aleatória sempre segue uma distribuição normal";
+        Q88.Resposta2 = "Que a média de uma distribuição uniforme sempre tende a ser igual à média da população";
+        Q88.Resposta3 = "Que a soma de um grande número de variáveis aleatórias independentes tende a se aproximar de uma distribuição normal";
+        Q88.Resposta4 = "Que a variância de uma amostra aumenta com o tamanho da amostra";
+        Q88.Resposta5 = "Que qualquer amostra aleatória segue uma distribuição binomial";
+        Q88.RespostaCorreta = 3;
+        ConfiguraDesenha(LabelPergunta, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+        ListaQuestao.Add(Q88);
+
+        var Q89 = new Questao();
+        Q89.Pergunta = "Na ciência da computação, o que é o problema da parada (Halting Problem) e qual foi a sua conclusão principal segundo Alan Turing?";
+        Q89.Resposta1 = "Um algoritmo que decide se um programa terminará ou entrará em um loop infinito sempre pode ser construído";
+        Q89.Resposta2 = "O problema da parada é resolúvel apenas para programas com complexidade computacional linear";
+        Q89.Resposta3 = "É impossível construir um algoritmo que determine, para todo programa e toda entrada, se o programa vai parar ou rodar indefinidamente";
+        Q89.Resposta4 = "O problema da parada é resolvido com o uso de máquinas de Turing universais";
+        Q89.Resposta5 = "A solução depende da quantidade de memória disponível no sistema";
+        Q89.RespostaCorreta = 3;
+        ConfiguraDesenha(LabelPergunta, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+        ListaQuestao.Add(Q89);
+
+        var Q90 = new Questao();
+        Q90.Pergunta = "Na filosofia da ciência, o que é o 'falsificacionismo' proposto por Karl Popper e qual é sua implicação para a prática científica?";
+        Q90.Resposta1 = "Teorias científicas podem ser comprovadas através de observações repetidas";
+        Q90.Resposta2 = "Teorias científicas devem ser confirmadas por um consenso científico universal";
+        Q90.Resposta3 = "Uma teoria científica é válida apenas se puder ser refutada por algum experimento ou observação";
+        Q90.Resposta4 = "Teorias científicas são irrefutáveis, apenas evoluindo com o tempo";
+        Q90.Resposta5 = "Uma teoria científica só pode ser verdadeira se for suportada por uma evidência empírica extensa";
+        Q90.RespostaCorreta = 3;
+        ConfiguraDesenha(LabelPergunta, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+        ListaQuestao.Add(Q90);
+
+        var Q91 = new Questao();
+        Q91.Pergunta = "Na física, o que estabelece o princípio de exclusão de Pauli em relação aos férmions em um sistema quântico?";
+        Q91.Resposta1 = "Férmions não podem coexistir no mesmo estado quântico";
+        Q91.resposta02 = "Férmions podem ocupar o mesmo estado quântico em temperaturas baixas";
+        Q91.resposta03 = "Férmions são indistinguíveis, mas podem coexistir no mesmo estado quântico";
+        Q91.resposta04 = "Férmions se aniquilam ao compartilhar o mesmo estado quântico";
+        Q91.resposta05 = "Férmions e bósons obedecem às mesmas regras de ocupação quântica";
+        Q91.RespostaCorreta = "Férmions não podem coexistir no mesmo estado quântico";
+        ConfiguraDesenha(LabelPergunta, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+        ListaQuestao.Add(Q91);
+
+var Q37 = new Questao();
+Q37.Pergunta = "Na literatura, o que caracteriza o conceito de 'fluxo de consciência' utilizado por autores como James Joyce e Virginia Woolf?";
+Q37.Resposta1 = "Um estilo narrativo linear e objetivo";
+Q37.resposta02 = "A descrição de eventos com foco exclusivamente em ações externas";
+Q37.resposta03 = "Uma técnica narrativa que busca reproduzir o fluxo de pensamentos internos de um personagem, muitas vezes sem estrutura gramatical rígida";
+Q37.resposta04 = "O uso de diálogos internos claros e objetivos";
+Q37.resposta05 = "A cronologia exata dos pensamentos do personagem";
+Q37.RespostaCorreta = "Uma técnica narrativa que busca reproduzir o fluxo de pensamentos internos de um personagem, muitas vezes sem estrutura gramatical rígida";
+        ConfiguraDesenha(LabelPergunta, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+        ListaQuestao.Add(Q37);
+
+var Q38 = new Questao();
+Q38.Pergunta = "Na matemática, o que define um espaço métrico completo segundo o conceito de completude em análise real?";
+Q38.Resposta1 = "Todo espaço métrico tem uma métrica derivada que é completa";
+Q38.resposta02 = "Um espaço métrico é completo se toda sequência de Cauchy nele convergir para um ponto dentro do espaço";
+Q38.resposta03 = "Espaços métricos completos contêm apenas números inteiros";
+Q38.resposta04 = "Espaços métricos completos são caracterizados pela existência de subconjuntos densos";
+Q38.resposta05 = "Espaços métricos completos são aqueles que têm uma curvatura constante";
+Q38.RespostaCorreta = "Um espaço métrico é completo se toda sequência de Cauchy nele convergir para um ponto dentro do espaço";
+        ConfiguraDesenha(LabelPergunta, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+        ListaQuestao.Add(Q38);
+
+var Q39 = new Questao();
+Q39.Pergunta = "Na arqueologia, o que o estudo das pinturas rupestres nas cavernas de Lascaux, na França, revela sobre as sociedades paleolíticas?";
+Q39.resposta01 = "A estrutura política centralizada das tribos paleolíticas";
+Q39.resposta02 = "A ausência de qualquer tipo de organização social";
+Q39.resposta03 = "A importância da caça e de rituais relacionados à sobrevivência";
+Q39.resposta04 = "O uso de escritas sofisticadas e registradas";
+Q39.resposta05 = "A predominância da agricultura nas sociedades paleolíticas";
+Q39.RespostaCorreta = "A importância da caça e de rituais relacionados à sobrevivência";
+        ConfiguraDesenha(LabelPergunta, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+        ListaQuestao.Add(Q39);
+
 
     }
     public void ProximaQuestao()
@@ -846,7 +1054,7 @@ namespace JOGODOMILHAO
 
         ListaQuestaoRespondida.Add (numRandomico);
         QuestaoAtual = ListaQuestao[numRandomico];
-        QuestaoAtual.Desenhar();
+        QuestaoAtual.Desenha();
     }
     public async void VerficaCorreta (int RespostaSelecionada)
     {
@@ -871,7 +1079,7 @@ namespace JOGODOMILHAO
     
     public async void VerificaResposta (int RespostaSelecionada)
     {
-        if (QuestaoAtual.Pergunta EstaCorreto(RespostaSelecionada))
+        if (QuestaoAtual.VerificaResposta(RespostaSelecionada))
         {
             await Task.Delay (1000);
             NivelAtual ++;
@@ -883,26 +1091,25 @@ namespace JOGODOMILHAO
             Inicializar();
         }
 
-        void Adiciona Pontuacao (int n);
+        void AdicionaPontuacao (int n)
         {
             if (n == 1)
              Pontuacao = 1000;
-            else if (n == 2);
+            else if (n == 2)
              Pontuacao = 2000;
-            else if (n == 3);
+            else if (n == 3)
              Pontuacao = 5000;
-             else if (n == 4);
+             else if (n == 4)
              Pontuacao = 10000;
-            else if (n == 5);
+            else if (n == 5)
              Pontuacao = 20000;
-              Pontuacao = 2000;
-            else if (n == 6);
+            else if (n == 6)
              Pontuacao = 50000;
-             else if (n == 7);
+             else if (n == 7)
              Pontuacao = 100000;
-            else if (n == 8);
+            else if (n == 8)
              Pontuacao = 200000;
-            else if (n == 9);
+            else if (n == 9)
              Pontuacao = 500000;
             else
                 Pontuacao = 1000000;
