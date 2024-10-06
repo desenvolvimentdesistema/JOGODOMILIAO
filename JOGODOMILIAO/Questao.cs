@@ -1,100 +1,112 @@
-namespace JOGODOMILHAO
+namespace JOGODOMILIAO
 {
-
     public class Questao : IEquatable<Questao>
     {
         public bool Equals (Questao q)
         {
-            return this.Nivel == q.Nivel &&
-                   this.Pergunta == q.Pergunta;
+            return this.Nivelresposta == q.Nivelresposta &&
+            this.Pergunta == q.Pergunta;
         }
         public string Pergunta;
-        public string Resposta1;
-        public string Resposta2;
-        public string Resposta3;
-        public string Resposta4;
-        public string Resposta5;
+        public string Resposta01;
+        public string Resposta02;
+        public string Resposta03;
+        public string Resposta04;
+        public string Resposta05;
         public int RespostaCorreta;
-        public int NíveldaPergunta;
-        private Label LabelPergunta;
+        public int Nivelresposta;
+        private Label Labelpergunta;
         private Button ButtonResposta1;
         private Button ButtonResposta2;
         private Button ButtonResposta3;
         private Button ButtonResposta4;
         private Button ButtonResposta5;
 
-        public void ConfiguraDesenha(Label LabelPergunta, Button Button1, Button Button2,Button Button3,Button Button4,Button Button5)
+
+
+        public void ConfiguraEstruturaDesenho(Label labelpergunta, Button button1, Button button2, Button button3, Button button4, Button button5)
         {
-            LabelPergunta = LabelPergunta;
-            ButtonResposta1 = ButtonResposta1;
-            ButtonResposta2 = ButtonResposta2;
-            ButtonResposta3 = ButtonResposta3;
-            ButtonResposta4 = ButtonResposta4;
-            ButtonResposta5 = ButtonResposta5;
+            Labelpergunta = labelpergunta;
+            ButtonResposta1 = button1;
+            ButtonResposta2 = button2;
+            ButtonResposta3 = button3;
+            ButtonResposta4 = button4;
+            ButtonResposta5 = button5;
         }
-        public void Desenha()
+        public void Desenhar()
         {
-            LabelPergunta = LabelPergunta;
-            ButtonResposta1 = ButtonResposta1;
-            ButtonResposta2 = ButtonResposta2;
-            ButtonResposta3 = ButtonResposta3;
-            ButtonResposta4 = ButtonResposta4;
-            ButtonResposta5 = ButtonResposta5;
-            ButtonResposta1.IsVisible = true;
-            ButtonResposta2.IsVisible = true;
-            ButtonResposta3.IsVisible = true;
-            ButtonResposta4.IsVisible = true;
-            ButtonResposta5.IsVisible = true;
+            Labelpergunta.Text = Pergunta;
+            ButtonResposta1.Text = Resposta01;
+            ButtonResposta2.Text = Resposta02;
+            ButtonResposta3.Text = Resposta03;
+            ButtonResposta4.Text = Resposta04;
+            ButtonResposta5.Text = Resposta05;
+
+            ButtonResposta1.BackgroundColor = Color.FromRgba("#4287f5");
+            ButtonResposta2.BackgroundColor = Color.FromRgba("#4287f5");
+            ButtonResposta3.BackgroundColor = Color.FromRgba("#4287f5");
+            ButtonResposta4.BackgroundColor = Color.FromRgba("#4287f5");
+            ButtonResposta5.BackgroundColor = Color.FromRgba("#4287f5");
+
+            ButtonResposta1.IsVisible=true;
+            ButtonResposta2.IsVisible=true;
+            ButtonResposta3.IsVisible=true;
+            ButtonResposta4.IsVisible=true;
+            ButtonResposta5.IsVisible=true;
+            
 
         }
-        private Button QualButton(int VerificaResposta)
+
+        private Button QualBTN(int RespostaSelecionada)
         {
-            if (VerificaResposta == 1)
+            if (RespostaSelecionada == 1)
                 return ButtonResposta1;
-            else if (VerificaResposta == 2)
+            else if (RespostaSelecionada == 2)
                 return ButtonResposta2;
-            else if (VerificaResposta == 3)
+            else if (RespostaSelecionada == 3)
                 return ButtonResposta3;
-            else if (VerificaResposta == 4)
+            else if (RespostaSelecionada == 4)
                 return ButtonResposta4;
-            else if (VerificaResposta == 5)
+            else if (RespostaSelecionada == 5)
                 return ButtonResposta5;
             else
                 return null;
+
         }
-        public bool  VerificaResposta(int RespostaSelecionada)
+        public bool VerificaResposta(int RespostaSelecionada)
         {
             if (RespostaCorreta == RespostaSelecionada)
             {
-                var Button = QualButton(RespostaSelecionada);
+                var Button = QualBTN(RespostaSelecionada);
                 Button.BackgroundColor = Colors.Green;
                 return true;
             }
             else
             {
-                var ButtonCorreto = QualButton(RespostaCorreta);
-                var ButtonIncorreto = QualButton(RespostaSelecionada);
-                ButtonCorreto.BackgroundColor = Colors.Green;
+                var ButtonCorreto = QualBTN(RespostaCorreta);
+                var ButtonIncorreto = QualBTN(RespostaSelecionada);
+                ButtonCorreto.BackgroundColor = Colors.Yellow;
                 ButtonIncorreto.BackgroundColor = Colors.Red;
                 return false;
             }
         }
 
-    public Questao()
-    {
+        public Questao()
+        {
+
+        }
+        public Questao(Label labelpergunta, Button button1, Button button2, Button button3, Button button4, Button button5)
+        {
+            Labelpergunta = labelpergunta;
+            ButtonResposta1 = button1;
+            ButtonResposta2 = button2;
+            ButtonResposta3 = button3;
+            ButtonResposta4 = button4;
+            ButtonResposta5 = button5;
+        }
+
+
+
 
     }
-
-    public Questao(Label LabelPergunta, Button Button1, Button Button2,Button Button3,Button Button4,Button Button5)
-    {
-            LabelPergunta = LabelPergunta;
-            ButtonResposta1 = ButtonResposta1;
-            ButtonResposta2 = ButtonResposta2;
-            ButtonResposta3 = ButtonResposta3;
-            ButtonResposta4 = ButtonResposta4;
-            ButtonResposta5 = ButtonResposta5;
-    }
-    }
-
-    
 }

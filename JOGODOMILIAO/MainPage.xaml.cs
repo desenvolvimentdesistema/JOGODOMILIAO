@@ -2,50 +2,71 @@
 
 public partial class MainPage : ContentPage
 {
-	
 	Gerenciador gerenciador;
+
 	public MainPage()
 	{
 		InitializeComponent();
-		gerenciador = new Gerenciador(LabelPergunta, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
-		gerenciador = ProximaPergunta();
+		gerenciador = new Gerenciador(Labelpergunta, Button1, Button2, Button3, Button4, Button5, labelPontuacao, labelNivel);
+
 	}
 
-    private Gerenciador ProximaPergunta()
-    {
-        throw new NotImplementedException();
-    }
-
-    void OnButtonResposta1Clicked(object sender, EventArgs args)
+	void OnButtonResposta01ButtonClicked(object sender, EventArgs args)
 	{
-		gerenciador.VerficaResposta (1);
+		gerenciador.VerfiicaCorreto(1);
+	}
+	void OnButtonResposta02ButtonClicked(object sender, EventArgs args)
+	{
+		gerenciador.VerfiicaCorreto(2);
+	}
+	void OnButtonResposta03ButtonClicked(object sender, EventArgs args)
+	{
+		gerenciador.VerfiicaCorreto(3);
+	}
+	void OnButtonResposta04ButtonClicked(object sender, EventArgs args)
+	{
+		gerenciador.VerfiicaCorreto(4);
+	}
+	void OnButtonResposta05ButtonClicked(object sender, EventArgs args)
+	{
+		gerenciador.VerfiicaCorreto(5);
+	}
+	private void ButtonVoltarButtonClicked(object sender, EventArgs args)
+	{
+
+		Application.Current.MainPage = new Telainicial();
+
 	}
 
-	
-	void OnButtonResposta2Clicked(object sender, EventArgs  args)
+	async void OnAjudaPulaClicked(object s, EventArgs E)
 	{
-		gerenciador.VerficaResposta (2);
-	}
+		if (await DisplayAlert("PULAR QUESTÃO!", "Deseja mesmo pular a questão, depois não será possível usar esse recurso", "PULAR QUESTÃO", "CANCELAR"))
+		{
+			gerenciador.ProximaQuestao();
+			(s as ImageButton).IsVisible = false;
+		}
 
-	void OnButtonResposta3Clicked(object sender, EventArgs args)
-	{
-		gerenciador.VerficaResposta (3);
 	}
-
-	void OnButtonResposta4Clicked(object sender, EventArgs args)
+	async void OnAjudaRetirarClicked(object s, EventArgs e)
 	{
-		gerenciador.VerficaResposta (4);
+		if (await DisplayAlert("CARTAS 🃏!", "Deseja mesmo usar o recurso das cartas, depois não será possível usar esse recurso", "USAR AS CARTAS", "CANCELAR"))
+		{
+			var ajuda = new RetiraErradas();
+			ajuda.ConfiguraDesenho(Button1, Button2, Button3, Button4, Button5);
+			ajuda.RealizaAjuda(gerenciador.GetQuestaoAtual());
+			(s as ImageButton).IsVisible = false;
+		}
+
 	}
-
-	void OnButtonResposta5Clicked(object sender, EventArgs args)
+	async void OnAjudaUniversitariosClicked(object s, EventArgs e)
 	{
-		gerenciador.VerficaResposta (5);
-	}
+		if (await DisplayAlert("UNIVERSITÁRIOS! 🎓", "Deseja mesmo usar o recurso dos universitários, depois não será possível usar esse recurso", "USAR AJUDA DOS UNIVERSITÁRIOS", "CANCELAR"))
+		{
+			var ajuda = new Universitarios();
+			ajuda.ConfiguraDesenho(Button1, Button2, Button3, Button4, Button5);
+			ajuda.RealizaAjuda(gerenciador.GetQuestaoAtual());
+			(s as ImageButton).IsVisible = false;
+		}
 
-	void OnAjudaRetirarClicked(object s, EventArgs e)
-	{
-		var ajuda = new RetiraErrada();
-		ajuda = ConfiguraDesenha(ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
-		
 	}
 }
