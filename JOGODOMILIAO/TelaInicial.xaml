@@ -14,7 +14,7 @@
             <RowDefinition Height="50"/>
 
         </Grid.RowDefinitions>
-        <Image Source="showdomiliao.png"
+        <Image Source="logo.png"
                Aspect="AspectFit"
                Grid.Row="0"
                Grid.RowSpan="2"/>

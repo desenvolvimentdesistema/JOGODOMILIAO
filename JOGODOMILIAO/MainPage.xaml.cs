@@ -49,7 +49,7 @@ public partial class MainPage : ContentPage
 	}
 	async void OnAjudaRetirarClicked(object s, EventArgs e)
 	{
-		if (await DisplayAlert("CARTAS 🃏!", "Deseja mesmo usar o recurso das cartas, depois não será possível usar esse recurso", "USAR AS CARTAS", "CANCELAR"))
+		if (await DisplayAlert("Deseja mesmo usar o recurso das cartas, depois não será possível usar esse recurso", "USAR AS CARTAS", "CANCELAR"))
 		{
 			var ajuda = new RetiraErradas();
 			ajuda.ConfiguraDesenho(Button1, Button2, Button3, Button4, Button5);

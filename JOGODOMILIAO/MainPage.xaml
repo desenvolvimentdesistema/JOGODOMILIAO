@@ -32,7 +32,7 @@
                         Clicked="ButtonVoltarButtonClicked"
                         Grid.Row="0"
                         Grid.Column="0"/>
-                <Image Source="showdomiliao.png"
+                <Image Source="logo.png"
                        Aspect="AspectFit"
                        Grid.Row="1"
                        Grid.Column="0"
@@ -98,14 +98,14 @@
                              BackgroundColor="White"
                              Grid.Row="9"
                              Grid.Column="0"/>
-                <ImageButton Source="universitarios.png"
+                <ImageButton Source="universitarios.jpg"
                              Padding="10,10,10,10"
                              Clicked="OnAjudaUniversitariosClicked"
                              x:Name="ButtonUniversitários"
                              BackgroundColor="White"
                              Grid.Row="9"
                              Grid.Column="1"/>
-                <ImageButton Source="pulavez.png"
+                <ImageButton Source="proximapergunta.jpg"
                              Padding="10,10,10,10"
                              Clicked="OnAjudaPulaClicked"
                              BackgroundColor="White"
