@@ -63,7 +63,7 @@ namespace JOGODOMILIAO
                 {
 
 
-                    await App.Current.MainPage.DisplayAlert("VOCÊ GANHOU 1 🌽🌽🌽🌽🌽🌽🌽!", "Parabéns!", "Ok");
+                    await App.Current.MainPage.DisplayAlert("Você ganhou!!", "Parabéns!", "Ok");
                     Application.Current.MainPage = new Telainicial();
                 }
                 else 

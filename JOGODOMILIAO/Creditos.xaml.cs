@@ -1,4 +1,4 @@
-namespace Showdomiliao;
+namespace JOGODOMILIAO;
 
 public partial class Creditos : ContentPage
 {
@@ -10,6 +10,6 @@ public partial class Creditos : ContentPage
     
 private void ButtonVoltarButtonClicked(object sender, EventArgs args)
 {
-	 Application.Current.MainPage = new TelaInicial();
+	 Application.Current.MainPage = new Telainicial();
 }
 }

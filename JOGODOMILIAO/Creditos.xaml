@@ -36,7 +36,7 @@
                 Clicked="ButtonVoltarButtonClicked"
                 HeightRequest="50"
                 CornerRadius="25"
-                BackgroundColor="#4287f5"
+                BackgroundColor="#0a4afa"
                 TextColor="White"
                 Margin="0,0,0,10"
                 FontSize="18"

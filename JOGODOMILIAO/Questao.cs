@@ -42,11 +42,11 @@ namespace JOGODOMILIAO
             ButtonResposta4.Text = Resposta04;
             ButtonResposta5.Text = Resposta05;
 
-            ButtonResposta1.BackgroundColor = Color.FromRgba("#4287f5");
-            ButtonResposta2.BackgroundColor = Color.FromRgba("#4287f5");
-            ButtonResposta3.BackgroundColor = Color.FromRgba("#4287f5");
-            ButtonResposta4.BackgroundColor = Color.FromRgba("#4287f5");
-            ButtonResposta5.BackgroundColor = Color.FromRgba("#4287f5");
+            ButtonResposta1.BackgroundColor = Color.FromRgba("#0a4afa");
+            ButtonResposta2.BackgroundColor = Color.FromRgba("#0a4afa");
+            ButtonResposta3.BackgroundColor = Color.FromRgba("#0a4afa");
+            ButtonResposta4.BackgroundColor = Color.FromRgba("#0a4afa");
+            ButtonResposta5.BackgroundColor = Color.FromRgba("#0a4afa");
 
             ButtonResposta1.IsVisible=true;
             ButtonResposta2.IsVisible=true;

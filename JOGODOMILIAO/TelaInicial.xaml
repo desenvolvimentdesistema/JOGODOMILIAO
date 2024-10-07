@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<ContentPage x:Class="JOGODOMILHAO.Telainicial"
+<ContentPage x:Class="JOGODOMILIAO.Telainicial"
              xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              BackgroundColor="#004AAD"
@@ -21,13 +21,13 @@
         <Button x:Name="IniciarJogo"
                 Clicked="OnButtonIniciarJogoButtonClicked"
                 Text="JOGAR"
-                BackgroundColor="#4287f5"
+                BackgroundColor="#0a4afa"
                 FontSize="12"
                 Grid.Row="2"/>
         <Button x:Name="CreditosJogo"
                 Clicked="OnButtonCreditosJogoButtonClicked"
                 Text="CRÉDITOS"
-                BackgroundColor="#4287f5"
+                BackgroundColor="#0a4afa"
                 FontSize="12"
                 Grid.Row="3"/>
 

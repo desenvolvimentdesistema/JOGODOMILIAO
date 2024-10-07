@@ -1,9 +1,9 @@
 namespace JOGODOMILIAO;
 
-public partial class TelaInicial : ContentPage
+public partial class Telainicial : ContentPage
 {
 
-    public TelaInicial()
+    public Telainicial()
     {
         InitializeComponent();
     }
