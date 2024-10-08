@@ -100,7 +100,7 @@ namespace JOGODOMILIAO
         public Gerenciador(Label labelpergunta, Button button1, Button button2, Button button3, Button button4, Button button5, Label labelPoint, Label labelNivel)
         {
             CriarQuestoes(labelpergunta, button1, button2, button3, button4, button5);
-            labelPontuacao = labelPoint;
+            labelPontuacao = labelPontuacao;
             this.labelNivel = labelNivel;
 
         }
